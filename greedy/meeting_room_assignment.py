@@ -1,4 +1,4 @@
-n = int(input())
+7n = int(input())
 tt = list()
 ans = 0
 
