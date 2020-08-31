@@ -6,11 +6,14 @@ for i in range(t) :
   n, m = map(int, input().split())
   pri = input()
   dq = deque()
+
   for j in range(len(pri)):
     if pri[j] == ' ':
       continue
     dq.append(pri[j])
+
   cnt = 0 
+  # pop 될때마다 타겟의 인덱스를 추적함 (m)
   while True :
     poped = dq.popleft()
     m -= 1
@@ -23,4 +26,3 @@ for i in range(t) :
       dq.append(poped)
       if m == -1 :
         m = len(dq)-1
-  
