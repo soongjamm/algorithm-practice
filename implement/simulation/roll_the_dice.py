@@ -8,7 +8,6 @@ order = list(map(int, input().split()))
 dice = [0 for _ in range(6)]
 
 def rotate_dice(dir) :
-  # idx : 1 윗면, 6 밑면
   if dir == 0:
         dice[0], dice[2], dice[3], dice[5] = dice[3], dice[0], dice[5], dice[2]
   elif dir == 1:
