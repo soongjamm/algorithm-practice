@@ -51,7 +51,7 @@ print(result)
 #   q.append(start)
   
 #   while q :
-#     pos = q.pop()
+#     pos = q.popleft()
 #     x, y = pos[0], pos[1]
 #     for i in range(4) :
 #       nx = x + dx[i]
