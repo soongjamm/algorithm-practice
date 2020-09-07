@@ -16,3 +16,5 @@ for i in example[1:] :
       result -= int(j) 
 
 print(result)
+
+

@@ -6,3 +6,7 @@ import sys
 
 data = sys.stdin.readline().rstrip()
 print(data)
+
+
+# 입력을 여러 줄에 걸쳐 받고, 모두 int로 변환 후 튜플로 변환 후 정렬
+data2 = sorted([tuple(map(int, sys.stdin.readline().split())) for _ in range(n)])
