@@ -13,7 +13,7 @@ li = [
 print(li)
 
 
-## 한줄에 숫자가 붙어서 여러 줄 입력될 때, int로 변환 후 list로 만듬
+## 한줄에 숫자가 붙어서 여러 줄 입력될 때, int로 변환 후 2차원 list로 만듬
 ## [[1, 0, 1, 0], [0, 1, 0, 1]] 이런 식으로 저장
 p = [list(map(int,list(input()))) for _ in range(n)]
 
