@@ -1,5 +1,5 @@
 # 미래 도시
-# python search/future_city.py
+# python shortest_path/future_city.py
 ## 입력
 # 5 7
 # 1 2
@@ -39,7 +39,6 @@ for i in range(1, n+1):
   for a in range(1, n+1):
     for b in range(1, n+1):
       graph[a][b] = min(graph[a][b], graph[a][i]+graph[i][b])
-print(graph)
 
 # 수행된 결과를 출력
 distance = graph[1][k] + graph[k][x]
