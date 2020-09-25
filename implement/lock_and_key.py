@@ -29,7 +29,6 @@ def check(i, j, key, lock):
   for a in range(n):
     for b in range(n):
       if new_lock[a][b] == 0:
-        print("#2")
         return
   
   # for k in range(n):
