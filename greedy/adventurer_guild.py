@@ -7,21 +7,17 @@
 # 2
 
 n = int(input())
-arr = list(map(int, input().split()))
+data = list(map(int, input().split()))
+data.sort()
 
-arr.sort()
+cnt = 0 # 현재 그룹에 포함된 모험가의 수
+groups = 0 # 만들어진 그룹의 수
 
-now = 1
-cnt = 0
-groups = 0
-for i in arr:
-  if now == i:
-    cnt += 1
-    if cnt == now:
-      cnt = 0
-      groups += 1
-  elif now < i:
-    now += 1
-    cnt = 1
+# data는 공포도의 집합
+for i in data:
+  cnt += 1 # 현재 그룹에 해당 모험가를 포함시킴
+  if cnt >= i: # 현재 그룹에 포함된 모험가의 수가 현재의 공포도 이상이라면, 그룹 결성
+    groups += 1 # 총 그룹의 수 증가
+    cnt = 0 # 현재 그룹에 포함된 모험가의 수 초기화
 
 print(groups)
