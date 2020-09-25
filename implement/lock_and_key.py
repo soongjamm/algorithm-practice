@@ -1,5 +1,12 @@
+# 내 아이디어 :
+# key와 lock을 xor해서 lock의 원소 전부가 1이 되면 True
+# key를 회전시켜 나오는 4가지 방향을 모두 고려
+# key를 이동시킬 때, 한 칸만 lock에 걸치는 경우도 고려했다.
+# 이 때, lock의 시작점을 0-(key길이인 m -1)부터 n까지 검사했다.
 
-
+# 교재 아이디어 :
+# lock의 시작점을 음수부터 하지 않고, lock의 크기를 3배로 늘렸다.
+# xor 대신, lock과 key의 합이 1인지 확인했다.
 import copy
 
 def check(i, j, key, lock):
